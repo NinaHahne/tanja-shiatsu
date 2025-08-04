@@ -1,0 +1,15 @@
+# common: common translations (header, footer, etc.)
+
+title: SvelteKit Starter
+
+home: Home
+about: About
+
+header_links:
+  home: Home
+  about: About
+
+privacy: Privacy
+imprint: Imprint
+
+switch: Auf Deutsch umstellen

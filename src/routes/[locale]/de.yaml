@@ -1,0 +1,7 @@
+# home: Homepage translations (root-index)
+
+title: Startseite | SvelteKit Starter
+
+intro_text: Willkommen auf der Startseite auf deutsch.
+
+docs: 'Besuche %link%, um die Dokumentation zu lesen.'

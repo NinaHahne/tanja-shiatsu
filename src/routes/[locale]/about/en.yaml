@@ -1,0 +1,32 @@
+# About page translations
+
+title: About Us | SvelteKit Starter
+
+intro_text: Welcome to the about page! This is an example of a nested route.
+
+team: Our Team
+
+members:
+  - name: Bob
+    role: Designer
+  - name: Alice
+    role: Developer
+  - name: Charlie
+    role: Project Manager
+
+  # works also with keys:
+
+  # bob:
+  #   name: Bob
+  #   role: Designer
+  # alice:
+  #   name: Alice
+  #   role: Entwicklerin
+  # charlie:
+  #   name: Charlie
+  #   role: Projektmanager
+# ⚠️ Note: no further nesting is supported, this does not work:
+# team:
+#   members:
+#     - name: Bob
+#       role: Designer

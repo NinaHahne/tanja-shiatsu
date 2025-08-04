@@ -1,0 +1,32 @@
+# About page translations
+
+title: Über uns | SvelteKit Starter
+
+intro_text: Willkommen auf der About-Seite! Dies ist ein Beispiel für eine Unterseitenstruktur.
+
+team: Unser Team
+
+members:
+  - name: Bob
+    role: Designer
+  - name: Alice
+    role: Entwicklerin
+  - name: Charlie
+    role: Projektmanager
+
+  # works also with keys:
+
+  # bob:
+  #   name: Bob
+  #   role: Designer
+  # alice:
+  #   name: Alice
+  #   role: Entwicklerin
+  # charlie:
+  #   name: Charlie
+  #   role: Projektmanager
+# ⚠️ Note: no further nesting is supported, this does not work:
+# team:
+#   members:
+#     - name: Bob
+#       role: Designer

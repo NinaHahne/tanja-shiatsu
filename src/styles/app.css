@@ -1,0 +1,56 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  /* updates in +layout.svelte */
+  --scrollbar-width: 0px;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Prevent body scrolling when menu is open */
+body:has(.show-menu.overflowing) {
+  overflow: hidden;
+  padding-right: var(--scrollbar-width);
+}
+
+body:has(.show-menu.overflowing) #toggle_menu {
+  right: var(--scrollbar-width);
+}
+
+@layer base {
+  /* Typography */
+  h1 {
+    @apply text-4xl font-bold;
+    @apply mb-4;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-medium;
+  }
+  h4 {
+    @apply text-xl font-medium;
+  }
+  h5 {
+    @apply text-lg font-medium;
+  }
+  h6 {
+    @apply text-lg font-medium;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  footer a {
+    @apply text-base text-link underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover;
+  }
+}
