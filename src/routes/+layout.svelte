@@ -85,7 +85,7 @@
 
 <div
   bind:this={container}
-  class="relative flex min-h-dvh w-full flex-col justify-between bg-background"
+  class="text-text relative flex min-h-dvh w-full flex-col justify-between bg-background"
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
@@ -102,19 +102,19 @@
           class:text-link-contrast={isActive}
           class:text-link-active={!isActive}
           class:hoverable:hover:bg-link-hover={!isActive}
-          class="active:bg-button-active rounded-md bg-background px-3 py-1 font-medium underline-offset-4 shadow-sm transition hoverable:hover:text-link-contrast"
+          class="rounded-md bg-button px-3 py-1 font-medium underline-offset-4 shadow-sm transition active:bg-button-active hoverable:hover:text-link-contrast"
           >{name}</a
         >
       {/each}
     </nav>
     <button
       onclick={toggleLocale}
-      class="bg-button active:bg-button-active hoverable:hover:bg-button-hover flex h-8 w-8 items-center justify-center rounded-[50%] p-2 font-medium text-link-active shadow-sm transition hoverable:hover:text-link-contrast"
+      class="flex h-8 w-8 items-center justify-center rounded-[50%] bg-button p-2 font-medium text-link-active shadow-sm transition active:bg-button-active hoverable:hover:bg-button-hover hoverable:hover:text-link-contrast"
       >{lang === 'en' ? 'DE' : 'EN'}</button
     >
   </header>
 
-  <main class="relative flex flex-col p-4">
+  <main class="relative flex flex-col">
     {@render children()}
   </main>
 
@@ -124,7 +124,7 @@
         <a href="/{$locale}/imprint">{$t('common.imprint')}</a>
         <a href="/{$locale}/privacy">{$t('common.privacy')}</a>
       </div>
-      <p class="whitespace-nowrap text-right text-base">&copy; 2025 Erin Example</p>
+      <p class="text-text-dark whitespace-nowrap text-right text-base">&copy; 2025 Tanja Schochow</p>
     </div>
   </footer>
 </div>

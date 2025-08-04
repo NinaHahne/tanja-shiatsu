@@ -54,3 +54,17 @@ body:has(.show-menu.overflowing) #toggle_menu {
     @apply text-base text-link underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover;
   }
 }
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

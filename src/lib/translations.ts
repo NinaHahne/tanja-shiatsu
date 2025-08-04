@@ -40,13 +40,6 @@ export const { t, locale, locales, loading, loadTranslations } = new i18n({
       },
     },
     {
-      key: 'about',
-      translations: {
-        de: import('../routes/[locale]/about/de.yaml'),
-        en: import('../routes/[locale]/about/en.yaml'),
-      },
-    },
-    {
       key: 'imprint',
       translations: {
         de: import('../routes/[locale]/imprint/de.yaml'),

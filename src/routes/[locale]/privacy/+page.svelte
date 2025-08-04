@@ -1,4 +1,4 @@
-<!-- Example About page -->
+<!-- Privacy page -->
 
 <script lang="ts">
   import { t } from '$lib/translations';
@@ -8,6 +8,7 @@
   <title>{$t('privacy.title')}</title>
 </svelte:head>
 
-<section class="relative flex flex-col items-center gap-4 pt-24">
-  <h1>{$t('privacy.headline')}</h1>
+<section class="relative flex flex-col items-center gap-4 px-4 py-24">
+  <h1 class="text-text-base">{$t('privacy.headline')}</h1>
+  <p class="text-text mt-2 text-[1.2rem] italic">{$t('common.soon')}</p>
 </section>

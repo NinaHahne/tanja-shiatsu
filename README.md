@@ -1,5 +1,7 @@
 # SvelteKit Starter
 
+<!-- TODO: update for tanja-shiatsu -->
+
 This is a **SvelteKit starter template** for new projects. It includes:
 
 - ✅ **SvelteKit** with TypeScript

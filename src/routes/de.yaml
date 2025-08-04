@@ -1,15 +1,14 @@
 # common: common translations (header, footer, etc.)
 
-title: SvelteKit Starter
-
-home: Startseite
-about: Über uns
+title: Shiatsu – Webseite in Arbeit #TODO
 
 header_links:
   home: Startseite
-  about: Über uns
+  # about: Über uns
 
 privacy: Datenschutz
 imprint: Impressum
 
 switch: Switch to English
+
+soon: Bald online

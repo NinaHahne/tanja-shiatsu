@@ -1,17 +1,14 @@
 <!-- Homepage / Landing page / index -->
 <script lang="ts">
   import { t } from '$lib/translations';
-  import { replaceVariables } from '$lib/translations';
-
-  const docsLink = '<a href="https://svelte.dev/docs/kit" target="_blank">svelte.dev/docs/kit</a>';
 </script>
 
 <svelte:head>
   <title>{$t('home.title')}</title>
 </svelte:head>
 
-<section class="relative flex flex-col items-center gap-4 pt-24 text-center">
-  <h1>{$t('home.intro_text')}</h1>
-  <!-- @html is a special Svelte syntax to render HTML, see https://svelte.dev/docs/svelte/@html -->
-  <!-- <p>{@html replaceVariables($t('home.docs'), { link: docsLink })}</p> -->
+<section class="relative flex h-dvh flex-col items-center justify-center gap-4 px-4 py-24 text-center">
+  <div class="animate-float relative text-[3rem]">🌒</div>
+  <h1 class="mt-4 text-[2.5rem] font-bold text-text-base">{$t('home.headline')}</h1>
+  <p class="text-text mt-2 text-[1.2rem]">{$t('home.description')}</p>
 </section>

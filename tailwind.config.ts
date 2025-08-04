@@ -23,24 +23,26 @@ export default {
           dark: '#b91c1c', // red-800
         },
         link: {
-          DEFAULT: '#1e3a8a', // blue-600
-          hover: '#1d4ed8', // blue-700
-          active: '#1e3a8a', // blue-900
-          contrast: '#fefcfb', // Soft White / text on buttons
+          DEFAULT: '#0b3754', // dark blue
+          hover: '#376b8c', // medium blue
+          active: '#0b3754', // dark blue
+          contrast: '#f4f4f2', // Soft White / text on buttons
         },
         button: {
-          DEFAULT: '#fefcfb', // Soft White
-          hover: '#1d4ed8', // blue-700
-          active: '#1e3a8a', // blue-900
+          DEFAULT: '#f4f4f2', // Soft White
+          hover: '#376b8c', // medium blue
+          active: '#0b3754', // dark blue
         },
         text: {
-          base: '#1f2937', // gray-800
-          muted: '#6b7280', // gray-500
+          DEFAULT: '#f4f4f2', // Soft White
+          base: '#a7cdbc', // light green
+          dark: '#0b3754', // dark blue
+          muted: '#918a71', // dusty gray
         },
         background: {
-          DEFAULT: '#fefcfb', // Soft White
+          DEFAULT: '#0b3754', // dark blue
           muted: '#f9fafb', // gray-50
-          nav: '#eaf1f9', // blue-50
+          nav: '#a7cdbc', // light green
         },
 
         // custom colors
