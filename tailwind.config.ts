@@ -31,7 +31,7 @@ export default {
         button: {
           DEFAULT: '#f4f4f2', // Soft White
           hover: '#376b8c', // medium blue
-          active: '#0b3754', // dark blue
+          active: '#a7cdbc', // light green
         },
         text: {
           DEFAULT: '#f4f4f2', // Soft White

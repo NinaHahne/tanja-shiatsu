@@ -85,11 +85,11 @@
 
 <div
   bind:this={container}
-  class="text-text relative flex min-h-dvh w-full flex-col justify-between bg-background"
+  class="relative flex min-h-dvh w-full flex-col justify-between bg-background text-text"
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
-  <header class="fixed top-0 z-50 flex h-16 w-full justify-between bg-background-nav p-4">
+  <header class="fixed top-0 z-50 flex h-16 w-full justify-between p-4">
     <nav class="relative flex h-full items-center justify-center gap-4">
       {#each Object.entries(headerLinks ?? {}) as [key, name = ''] (key)}
         {@const url = key === 'home' ? '' : `${key}/`}
@@ -99,7 +99,7 @@
           href={fullUrl}
           class:active={isActive}
           class:bg-button-active={isActive}
-          class:text-link-contrast={isActive}
+          class:text-link={isActive}
           class:text-link-active={!isActive}
           class:hoverable:hover:bg-link-hover={!isActive}
           class="rounded-md bg-button px-3 py-1 font-medium underline-offset-4 shadow-sm transition active:bg-button-active hoverable:hover:text-link-contrast"
@@ -124,7 +124,7 @@
         <a href="/{$locale}/imprint">{$t('common.imprint')}</a>
         <a href="/{$locale}/privacy">{$t('common.privacy')}</a>
       </div>
-      <p class="text-text-dark whitespace-nowrap text-right text-base">&copy; 2025 Tanja Schochow</p>
+      <p class="whitespace-nowrap text-right text-base text-text-dark">&copy; 2025 Tanja Schochow</p>
     </div>
   </footer>
 </div>
