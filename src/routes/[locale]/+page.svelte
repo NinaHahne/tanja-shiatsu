@@ -87,7 +87,7 @@
           <p class="font-semibold">Tanja Schochow</p>
           <p>Shiatsu Praktikerin (ESI) <br /> Gesundheitspraktikerin (DGAM) <br /> M.A. Sport und Lebensstil</p>
           <p>
-            <a class="underline underline-offset-4" href="mailto:info@tanja-shiatsu.de">info@tanja-shiatsu.de</a>
+            <a class="underline underline-offset-4" href="mailto:{$t('common.mail')}">{$t('common.mail')}</a>
           </p>
           <!-- #TODO: -->
           <p>+49 176 00000000</p>
