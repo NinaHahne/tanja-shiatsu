@@ -34,15 +34,15 @@ export default {
           active: '#a7cdbc', // light green
         },
         text: {
-          DEFAULT: '#f4f4f2', // Soft White
+          DEFAULT: '#0b3754', // dark blue
           base: '#a7cdbc', // light green
-          dark: '#0b3754', // dark blue
+          contrast: '#a7cdbc', // light green
           muted: '#918a71', // dusty gray
         },
         background: {
-          DEFAULT: '#0b3754', // dark blue
+          DEFAULT: '#c4e4d6d9', // transparent light green
           muted: '#f9fafb', // gray-50
-          nav: '#a7cdbc', // light green
+          nav: '#eddeca', // light beige
         },
 
         // custom colors

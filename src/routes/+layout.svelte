@@ -124,7 +124,7 @@
         <a href="/{$locale}/imprint">{$t('common.imprint')}</a>
         <a href="/{$locale}/privacy">{$t('common.privacy')}</a>
       </div>
-      <p class="whitespace-nowrap text-right text-base text-text-dark">&copy; 2025 Tanja Schochow</p>
+      <p class="whitespace-nowrap text-right text-base">&copy; 2025 Tanja Schochow</p>
     </div>
   </footer>
 </div>
