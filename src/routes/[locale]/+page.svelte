@@ -1,6 +1,8 @@
 <!-- Homepage / Landing page / index -->
 <script lang="ts">
   import { t } from '$lib/translations';
+  import PhoneLink from '$lib/components/PhoneLink.svelte';
+
   let heroImage = '/images/starry_night-lake-reflection.webp';
   let logoImage = '/images/waxing-crescent-moon_1f312.png';
   // toggelt die Demo-Animation:
@@ -89,8 +91,9 @@
           <p>
             <a class="underline underline-offset-4" href="mailto:{$t('common.mail')}">{$t('common.mail')}</a>
           </p>
-          <!-- #TODO: -->
-          <p>+49 176 00000000</p>
+          <p>
+            <PhoneLink />
+          </p>
         </div>
       </div>
     </aside>
