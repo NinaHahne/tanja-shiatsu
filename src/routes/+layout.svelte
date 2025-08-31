@@ -5,6 +5,8 @@
   import { onDestroy, onMount } from 'svelte';
   import '../styles/app.css';
 
+  let heroImage = '/images/Patagonien_0421.webp';
+
   let lang = $state($locale);
 
   // Function to toggle the language
@@ -89,6 +91,13 @@
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
+  <img
+    src={heroImage}
+    alt="Shiatsu"
+    class="absolute inset-0 h-full w-full object-cover"
+    decoding="async"
+    loading="eager"
+  />
   <header class="fixed top-0 z-50 flex h-16 w-full justify-between p-4">
     <nav class="relative flex h-full items-center justify-center gap-4">
       {#each Object.entries(headerLinks ?? {}) as [key, name = ''] (key)}
@@ -102,9 +111,12 @@
           class:text-link={isActive}
           class:text-link-active={!isActive}
           class:hoverable:hover:bg-link-hover={!isActive}
-          class="rounded-md bg-button px-3 py-1 font-medium underline-offset-4 shadow-sm transition active:bg-button-active hoverable:hover:text-link-contrast"
-          >{name}</a
+          class:hoverable:hover:text-link-contrast={!isActive}
+          class="rounded-md bg-button px-3 py-1 font-medium underline-offset-4 shadow-sm transition"
+          class:hidden={isActive}
         >
+          {name}
+        </a>
       {/each}
     </nav>
     <button
@@ -118,11 +130,10 @@
     {@render children()}
   </main>
 
-  <footer class="relative">
-    <div class="flex items-end justify-between gap-2 bg-background-nav p-4">
+  <footer class="relative bottom-0 z-50 w-full md:fixed">
+    <div class="flex items-end justify-between gap-2 bg-background-nav p-4 md:bg-transparent">
       <div class="flex flex-wrap gap-2">
-        <a href="/{$locale}/imprint">{$t('common.imprint')}</a>
-        <a href="/{$locale}/privacy">{$t('common.privacy')}</a>
+        <a href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>
       </div>
       <p class="whitespace-nowrap text-right text-base">&copy; 2025 Tanja Schochow</p>
     </div>

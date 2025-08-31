@@ -3,8 +3,7 @@
   import { t } from '$lib/translations';
   import PhoneLink from '$lib/components/PhoneLink.svelte';
 
-  let heroImage = '/images/starry_night-lake-reflection.webp';
-  let logoImage = '/images/waxing-crescent-moon_1f312.png';
+  let logoImage = '/images/waxing-crescent-moon_1f312.png'; // TODO🌒
   // toggelt die Demo-Animation:
   let isRevealed = $state(false);
   const toggleReveal = () => (isRevealed = !isRevealed);
@@ -41,23 +40,14 @@
     </button>
   </div>
 
-  <!-- Vollflächiges Bild -->
-  <img
-    src={heroImage}
-    alt="Shiatsu"
-    class="absolute inset-0 h-full w-full object-cover"
-    decoding="async"
-    loading="eager"
-  />
-
   <section
     class="relative grid h-full grid-cols-1 md:grid-cols-[minmax(20rem,1.5fr)_minmax(24rem,2fr)_minmax(20rem,1.5fr)]"
   >
     <!-- Linkes Info-Panel -->
     <aside class="panel-left relative z-10 bg-background" class:slide-out={isRevealed} data-panel="left">
       <div class="container mx-auto flex h-full flex-col justify-between px-4 py-10 md:px-6 md:py-16 lg:px-8">
-        <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full" />
-        <div class="mt-12 space-y-1 text-sm/6">
+        <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" />
+        <div class="my-12 space-y-1 text-sm/6">
           <p class="text-2xl font-semibold">
             Shiatsu ist Berührung, Energie&shy;arbeit, Wohl&shy;fühl&shy;massage, Freude, Energie, Heilung und
             Begleitung auf deinem Weg
@@ -85,11 +75,14 @@
           <p>60 Min  80 €<br />75 Min  100 €<br />90 Min  120 €</p>
         </div>
 
-        <div class="mt-12 space-y-1 text-sm/6">
+        <div class="my-12 space-y-1 text-sm/6">
           <p class="font-semibold">Tanja Schochow</p>
           <p>Shiatsu Praktikerin (ESI) <br /> Gesundheitspraktikerin (DGAM) <br /> M.A. Sport und Lebensstil</p>
           <p>
-            <a class="underline underline-offset-4" href="mailto:{$t('common.mail')}">{$t('common.mail')}</a>
+            <a
+              class="text-link underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover"
+              href="mailto:{$t('common.mail')}">{$t('common.mail')}</a
+            >
           </p>
           <p>
             <PhoneLink />

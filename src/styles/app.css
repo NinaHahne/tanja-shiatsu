@@ -51,7 +51,7 @@ body:has(.show-menu.overflowing) #toggle_menu {
   }
 
   footer a {
-    @apply text-base text-link underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover;
+    @apply text-base text-text underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover;
   }
 }
 
