@@ -49,8 +49,8 @@
         <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" />
         <div class="my-12 space-y-1 text-sm/6">
           <p class="text-2xl font-semibold">
-            Shiatsu ist Berührung, Energie&shy;arbeit, Wohl&shy;fühl&shy;massage, Freude, Energie, Heilung und
-            Begleitung auf deinem Weg
+            Shiatsu ist Berührung, Energie&shy;arbeit, Wohl&shy;fühl&shy;massage, Freude, Energie und Begleitung auf
+            deinem Weg
           </p>
         </div>
       </div>
