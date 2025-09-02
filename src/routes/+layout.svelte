@@ -130,8 +130,8 @@
     {@render children()}
   </main>
 
-  <footer class="relative bottom-0 z-50 w-full md:fixed">
-    <div class="flex items-end justify-between gap-2 bg-background-nav p-4 md:bg-transparent">
+  <footer class="relative bottom-0 z-50 w-full">
+    <div class="flex items-end justify-between gap-2 bg-background-nav p-4">
       <div class="flex flex-wrap gap-2">
         <a href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>
       </div>

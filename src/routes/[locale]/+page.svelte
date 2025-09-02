@@ -3,7 +3,8 @@
   import { t } from '$lib/translations';
   import PhoneLink from '$lib/components/PhoneLink.svelte';
 
-  let logoImage = '/images/waxing-crescent-moon_1f312.png'; // TODO🌒
+  let logoImage = '/images/waxing-crescent-moon_1f312.png'; // TODO: Logo einbinden?
+  let tanjaImage = '/images/tanja.webp';
   // toggelt die Demo-Animation:
   let isRevealed = $state(false);
   const toggleReveal = () => (isRevealed = !isRevealed);
@@ -46,8 +47,16 @@
     <!-- Linkes Info-Panel -->
     <aside class="panel-left relative z-10 bg-background" class:slide-out={isRevealed} data-panel="left">
       <div class="container mx-auto flex h-full flex-col justify-between px-4 py-10 md:px-6 md:py-16 lg:px-8">
-        <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" />
-        <div class="my-12 space-y-1 text-sm/6">
+        <!-- <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" /> -->
+        <img
+          src={tanjaImage}
+          alt="Foto von Tanja"
+          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-2 ring-text/80 md:h-44 md:w-44"
+          loading="lazy"
+          decoding="async"
+        />
+
+        <div class="mt-10 space-y-1 text-sm/6">
           <p class="text-2xl font-semibold">
             Shiatsu ist Berührung, Energie&shy;arbeit, Wohl&shy;fühl&shy;massage, Freude, Energie und Begleitung auf
             deinem Weg
@@ -75,7 +84,7 @@
           <p>60 Min  80 €<br />75 Min  100 €<br />90 Min  120 €</p>
         </div>
 
-        <div class="my-12 space-y-1 text-sm/6">
+        <div class="mt-10 space-y-1 text-sm/6">
           <p class="font-semibold">Tanja Schochow</p>
           <p>Shiatsu Praktikerin (ESI) <br /> Gesundheitspraktikerin (DGAM) <br /> M.A. Sport und Lebensstil</p>
           <p>

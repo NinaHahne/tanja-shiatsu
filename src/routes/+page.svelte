@@ -27,5 +27,5 @@
       </li>
     {/each}
   </ul>
-  <p>Redirecting to your language preference…</p>
+  <!-- <p>Redirecting to your language preference…</p> -->
 </section>
