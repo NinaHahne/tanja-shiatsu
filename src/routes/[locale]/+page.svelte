@@ -16,7 +16,7 @@
 
 <!-- <section class="relative flex h-dvh flex-col items-center justify-center gap-4 px-4 py-24 text-center">
   <div class="animate-float relative text-[3rem]">🌒</div>
-  <h1 class="mt-4 text-[2.5rem] font-bold text-text-base">{$t('home.headline')}</h1>
+  <h1 class="mt-4 text-[2.5rem] font-bold text-text-contrast">{$t('home.headline')}</h1>
   <p class="mt-2 text-[1.2rem] text-text">{$t('home.description')}</p>
 </section> -->
 
@@ -45,13 +45,13 @@
     class="relative grid h-full grid-cols-1 md:grid-cols-[minmax(20rem,1.5fr)_minmax(24rem,2fr)_minmax(20rem,1.5fr)]"
   >
     <!-- Linkes Info-Panel -->
-    <aside class="panel-left relative z-10 bg-background" class:slide-out={isRevealed} data-panel="left">
+    <aside class="panel-left relative z-10 bg-background/80" class:slide-out={isRevealed} data-panel="left">
       <div class="container mx-auto flex h-full flex-col justify-between px-4 py-10 md:px-6 md:py-16 lg:px-8">
         <!-- <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" /> -->
         <img
           src={tanjaImage}
           alt="Foto von Tanja"
-          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-2 ring-text/80 md:h-44 md:w-44"
+          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-2 ring-accent md:h-44 md:w-44"
           loading="lazy"
           decoding="async"
         />
@@ -75,7 +75,7 @@
     </div>
 
     <!-- Rechtes Info-Panel -->
-    <aside class="panel-right relative z-10 bg-background" class:slide-out={isRevealed} data-panel="right">
+    <aside class="panel-right relative z-10 bg-background/80" class:slide-out={isRevealed} data-panel="right">
       <div class="container mx-auto flex h-full flex-col justify-between px-4 py-10 md:px-6 md:py-16 lg:px-8">
         <div class="mt-10 space-y-1 text-sm/6">
           <!-- <h2 class="mt-14 text-3xl font-semibold">Praxis</h2> -->

@@ -14,45 +14,48 @@ export default {
       colors: {
         // main colors
         primary: {
-          DEFAULT: '#2e6da4', // clear sky blue
+          DEFAULT: '#2b3083', // * dark blue
           dark: '#1e40af', // blue-800 #TODO
           light: '#3b82f6', // blue-500 #TODO
         },
         accent: {
-          DEFAULT: '#d28c3c', // warm sand gold
+          DEFAULT: '#ffe9bc', // * light gold
           dark: '#b91c1c', // red-800 #TODO
         },
         link: {
-          DEFAULT: '#1b3319', // dark forest green
-          hover: '#d28c3c', // warm sand gold
-          active: '#f4f4f2', // Soft White
-          contrast: '#f4f4f2', // Soft White / text on buttons
+          DEFAULT: '#2b3083', // * dark blue
+          hover: '#ffe9bc', // * light gold
+          active: '#fff6ec', // * light apricot
+          contrast: '#2b3083', // * dark blue
         },
         button: {
-          DEFAULT: '#2e6da4', // clear sky blue
-          hover: '#d28c3c', // warm sand gold
-          active: '#d28c3c', // warm sand gold
+          DEFAULT: '#ffe9bc', // * light gold
+          hover: '#2b3083', // * dark blue
+          active: '#2b3083', // * dark blue
         },
         text: {
-          DEFAULT: '#1a2a28', // dark blue-green
-          base: '#a7cdbc', // light green
-          contrast: '#a7cdbc', // light green
-          muted: '#918a71', // dusty gray
+          DEFAULT: '#2b3083', // * dark blue
+          contrast: '#a2dcd7', // * light mint
+          muted: '#918a71', // dusty gray #TODO
         },
         background: {
-          DEFAULT: '#dff4efcc', // light mint with 80% opacity
-          muted: '#f9fafb', // gray-50
-          nav: '#f2e0b8cc', // warm sand with 80% opacity
+          DEFAULT: '#a2dcd7', // * light mint (use with 80% opacity)
+          alt: '#fff6ec', // * light apricot
+          nav: '#ffe9bc', // * light gold (use with 80% opacity)
         },
 
-        // custom colors
+        // logo/design colors
+        'dark-blue': '#2b3083', // * dark blue
+        'light-mint': '#a2dcd7', // * light mint
+        'light-gold': '#ffe9bc', // * light gold
+        'light-apricot': '#fff6ec', // * light apricot
+
+        // additional colors
         softwhite: '#f4f4f2', // Soft White
-        'dark blue-green': '#1a2a28', // dark blue-green
-        'light-green-85:': '#c4e4d6d9', // light green with 85% opacity
-        'light-mint-80': '#dff4efcc', // light mint with 80% opacity
+        'dark-blue-green': '#1a2a28', // dark blue-green
         'light-beige': '#eddeca', // light apricot beige
         'warm-sand': '#d28c3c', // warm sand gold
-        'warm-sand-80': '#f2e0b8cc', // warm sand gold with 50% opacity
+        'light-sand': '#f2e0b8', // light sand gold
         'clear-sky': '#2e6da4', // clear sky blue
         'forest-green': '#1b3319', // dark forest green
       },

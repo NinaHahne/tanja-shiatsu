@@ -87,7 +87,7 @@
 
 <div
   bind:this={container}
-  class="relative flex min-h-dvh w-full flex-col justify-between bg-background text-text"
+  class="bg-background-alt/80 relative flex min-h-dvh w-full flex-col justify-between text-text"
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
@@ -108,10 +108,10 @@
           href={fullUrl}
           class:active={isActive}
           class:bg-button-active={isActive}
-          class:text-link={isActive}
-          class:text-link-active={!isActive}
-          class:hoverable:hover:bg-link-hover={!isActive}
-          class:hoverable:hover:text-link-contrast={!isActive}
+          class:text-link={!isActive}
+          class:text-link-active={isActive}
+          class:hoverable:hover:bg-button-hover={!isActive}
+          class:hoverable:hover:text-link-hover={!isActive}
           class="rounded-md bg-button px-3 py-1 font-medium underline-offset-4 shadow-sm transition"
           class:hidden={isActive}
         >
@@ -121,7 +121,7 @@
     </nav>
     <button
       onclick={toggleLocale}
-      class="flex h-8 w-8 items-center justify-center rounded-[50%] bg-button p-2 font-medium text-link-active shadow-sm transition active:bg-button-active hoverable:hover:bg-button-hover hoverable:hover:text-link-contrast"
+      class="flex h-8 w-8 items-center justify-center rounded-[50%] bg-button p-2 font-medium text-link shadow-sm transition hoverable:hover:bg-button-hover hoverable:hover:text-link-hover"
       >{lang === 'en' ? 'DE' : 'EN'}</button
     >
   </header>
@@ -131,7 +131,7 @@
   </main>
 
   <footer class="relative bottom-0 z-50 w-full">
-    <div class="flex items-end justify-between gap-2 bg-background-nav p-4">
+    <div class="flex items-end justify-between gap-2 bg-background-nav/80 p-4">
       <div class="flex flex-wrap gap-2">
         <a href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>
       </div>
