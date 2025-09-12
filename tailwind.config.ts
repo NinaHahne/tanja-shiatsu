@@ -66,7 +66,7 @@ export default {
     typography,
     forms,
     containerQueries,
-    function ({ addVariant }) {
+    function ({ addVariant }: { addVariant: (name: string, definition: string) => void }) {
       // Prevents hover sticking on touch devices
       // NOTE: the following media queries work fine to detect hover properly on iPhones but not on Android devices:
       // (any-hover: none) / (hover: none) / (hover: hover)
