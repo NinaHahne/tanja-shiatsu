@@ -1,6 +1,8 @@
 <!-- Homepage / Landing page / index -->
 <script lang="ts">
+  import { page } from '$app/state';
   import { t } from '$lib/translations';
+  import PriceList from '$lib/components/PriceList.svelte';
   import PhoneLink from '$lib/components/PhoneLink.svelte';
 
   let logoImage = '/images/waxing-crescent-moon_1f312.png'; // TODO: Logo einbinden?
@@ -46,20 +48,19 @@
   >
     <!-- Linkes Info-Panel -->
     <aside class="panel-left relative z-10 bg-background/80" class:slide-out={isRevealed} data-panel="left">
-      <div class="container mx-auto flex h-full flex-col justify-between px-4 py-10 md:px-6 md:py-16 lg:px-8">
+      <div class="container mx-auto flex h-full flex-col justify-around gap-10 px-4 py-10 md:px-6 md:py-16 lg:px-8">
         <!-- <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" /> -->
         <img
           src={tanjaImage}
           alt="Foto von Tanja"
-          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-2 ring-accent md:h-44 md:w-44"
+          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-2 ring-accent md:mt-4 md:h-44 md:w-44"
           loading="lazy"
           decoding="async"
         />
 
-        <div class="mt-10 space-y-1 text-sm/6">
+        <div>
           <p class="text-2xl font-semibold">
-            Shiatsu ist Berührung, Energie&shy;arbeit, Wohl&shy;fühl&shy;massage, Freude, Energie und Begleitung auf
-            deinem Weg
+            {$t('home.shiatsu')}
           </p>
         </div>
       </div>
@@ -76,17 +77,24 @@
 
     <!-- Rechtes Info-Panel -->
     <aside class="panel-right relative z-10 bg-background/80" class:slide-out={isRevealed} data-panel="right">
-      <div class="container mx-auto flex h-full flex-col justify-between px-4 py-10 md:px-6 md:py-16 lg:px-8">
-        <div class="mt-10 space-y-1 text-sm/6">
-          <!-- <h2 class="mt-14 text-3xl font-semibold">Praxis</h2> -->
-          <p class="font-semibold">Praxis Lebenswert</p>
-          <p>Wildenbruchstr. 70<br />12045 Berlin Alt-Treptow</p>
-          <p>60 Min  80 €<br />75 Min  100 €<br />90 Min  120 €</p>
+      <div class="container mx-auto flex h-full flex-col justify-between gap-4 px-4 py-10 md:px-6 md:py-16 lg:px-8">
+        <div class="text-lg/6 md:mt-4">
+          <h5 class="font-semibold">{page.data.site.praxis}</h5>
+          <p>{page.data.site.street}<br />{page.data.site.city}</p>
         </div>
 
-        <div class="mt-10 space-y-1 text-sm/6">
-          <p class="font-semibold">Tanja Schochow</p>
-          <p>Shiatsu Praktikerin (ESI) <br /> Gesundheitspraktikerin (DGAM) <br /> M.A. Sport und Lebensstil</p>
+        <div class="text-lg/6">
+          <h5 class="font-semibold">{$t('common.prices')}</h5>
+          <PriceList />
+        </div>
+
+        <div class="text-lg/6">
+          <h5 class="font-semibold">{page.data.site.owner}</h5>
+          <ul class="mb-2">
+            {#each Object.values($t('common.qualifications')) as q}
+              <li>{q}</li>
+            {/each}
+          </ul>
           <p>
             <a
               class="text-link underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover"

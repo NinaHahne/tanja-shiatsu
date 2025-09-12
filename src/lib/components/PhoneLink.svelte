@@ -1,5 +1,5 @@
 <script lang="ts">
-  // Defaultwerte setzen
+  // default values:
   let { display = '+49 157 580 40147', href = '+4915758040147' } = $props();
 </script>
 

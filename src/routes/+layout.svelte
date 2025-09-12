@@ -87,7 +87,7 @@
 
 <div
   bind:this={container}
-  class="bg-background-alt/80 relative flex min-h-dvh w-full flex-col justify-between text-text"
+  class="relative flex min-h-dvh w-full flex-col justify-between bg-background-alt/80 text-text"
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
@@ -131,11 +131,11 @@
   </main>
 
   <footer class="relative bottom-0 z-50 w-full">
-    <div class="flex items-end justify-between gap-2 bg-background-nav/80 p-4">
+    <div class="flex min-h-16 items-end justify-between gap-2 bg-background-nav/80 p-4 md:items-center">
       <div class="flex flex-wrap gap-2">
         <a href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>
       </div>
-      <p class="whitespace-nowrap text-right text-base">&copy; 2025 Tanja Schochow</p>
+      <p class="whitespace-nowrap text-right text-base">&copy; 2025 {page.data.site.owner}</p>
     </div>
   </footer>
 </div>
