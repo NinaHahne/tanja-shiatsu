@@ -135,7 +135,7 @@
 
   <footer class="relative bottom-0 z-50 w-full">
     <div
-      class="flex min-h-16 items-end justify-between gap-2 border-t border-accent/80 bg-background-nav/80 p-4 md:items-center"
+      class="flex min-h-16 items-end justify-between gap-2 border-t border-accent/80 bg-background-nav/90 p-4 md:items-center"
     >
       <div class="flex flex-wrap gap-2">
         <a class="text-base text-link-contrast" href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>

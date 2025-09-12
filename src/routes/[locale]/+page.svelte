@@ -48,11 +48,13 @@
   >
     <!-- Linkes Info-Panel -->
     <aside
-      class="panel-left relative z-10 border-r border-accent/80 bg-background-alt/80"
+      class="panel-left relative z-10 border-b border-accent/80 bg-white/50 md:border-b-0 md:border-r md:bg-white/20"
       class:slide-out={isRevealed}
       data-panel="left"
     >
-      <div class="container mx-auto flex h-full flex-col justify-around gap-10 px-4 py-10 md:px-6 md:py-16 lg:px-8">
+      <div
+        class="container mx-auto flex h-full flex-col justify-around gap-10 bg-background-alt/80 px-4 py-10 md:px-6 md:py-16 lg:px-8"
+      >
         <!-- <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" /> -->
         <img
           src={tanjaImage}
@@ -81,11 +83,13 @@
 
     <!-- Rechtes Info-Panel -->
     <aside
-      class="panel-right relative z-10 border-l border-accent/80 bg-background-alt/80"
+      class="panel-right relative z-10 border-t border-accent/80 bg-white/50 md:border-l md:border-t-0 md:bg-white/20"
       class:slide-out={isRevealed}
       data-panel="right"
     >
-      <div class="container mx-auto flex h-full flex-col justify-between gap-4 px-4 py-10 md:px-6 md:py-16 lg:px-8">
+      <div
+        class="container mx-auto flex h-full flex-col justify-between gap-4 bg-background-alt/80 px-4 py-10 md:px-6 md:py-16 lg:px-8"
+      >
         <div class="text-lg/6 md:mt-4">
           <h5 class="font-semibold">{page.data.site.praxis}</h5>
           <p>{page.data.site.street}<br />{page.data.site.city}</p>
