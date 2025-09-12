@@ -50,8 +50,12 @@ body:has(.show-menu.overflowing) #toggle_menu {
     @apply text-lg;
   }
 
+  a {
+    @apply text-link underline underline-offset-4 transition active:text-link/80 hoverable:hover:text-link/80;
+  }
+
   footer a {
-    @apply text-base text-text underline underline-offset-4 transition active:text-text/80 hoverable:hover:text-text/80;
+    @apply text-link-contrast underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover;
   }
 }
 

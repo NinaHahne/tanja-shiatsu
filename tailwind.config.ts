@@ -19,19 +19,19 @@ export default {
           light: '#3b82f6', // blue-500 #TODO
         },
         accent: {
-          DEFAULT: '#ffe9bc', // * light gold
+          DEFAULT: '#a2dcd7', // * light mint
           dark: '#b91c1c', // red-800 #TODO
         },
         link: {
           DEFAULT: '#2b3083', // * dark blue
-          hover: '#ffe9bc', // * light gold
-          active: '#fff6ec', // * light apricot
-          contrast: '#2b3083', // * dark blue
+          hover: '#a2dcd7', // * light mint
+          active: '#a2dcd7', // * light mint
+          contrast: '#ffe9bc', // * light gold
         },
         button: {
           DEFAULT: '#ffe9bc', // * light gold
-          hover: '#2b3083', // * dark blue
-          active: '#2b3083', // * dark blue
+          hover: '#a2dcd7', // * light mint
+          active: '#a2dcd7', // * light mint
         },
         text: {
           DEFAULT: '#2b3083', // * dark blue
@@ -41,7 +41,7 @@ export default {
         background: {
           DEFAULT: '#a2dcd7', // * light mint (use with 80% opacity)
           alt: '#fff6ec', // * light apricot
-          nav: '#ffe9bc', // * light gold (use with 80% opacity)
+          nav: '#2b3083', // * dark blue (use with 80% opacity)
         },
 
         // logo/design colors

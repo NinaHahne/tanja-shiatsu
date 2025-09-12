@@ -47,13 +47,17 @@
     class="relative grid h-full grid-cols-1 md:grid-cols-[minmax(20rem,1.5fr)_minmax(24rem,2fr)_minmax(20rem,1.5fr)]"
   >
     <!-- Linkes Info-Panel -->
-    <aside class="panel-left relative z-10 bg-background/80" class:slide-out={isRevealed} data-panel="left">
+    <aside
+      class="panel-left relative z-10 border-r border-accent/80 bg-background-alt/80"
+      class:slide-out={isRevealed}
+      data-panel="left"
+    >
       <div class="container mx-auto flex h-full flex-col justify-around gap-10 px-4 py-10 md:px-6 md:py-16 lg:px-8">
         <!-- <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" /> -->
         <img
           src={tanjaImage}
           alt="Foto von Tanja"
-          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-2 ring-accent md:mt-4 md:h-44 md:w-44"
+          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-1 ring-accent/80 md:mt-4 md:h-44 md:w-44"
           loading="lazy"
           decoding="async"
         />
@@ -76,7 +80,11 @@
     </div>
 
     <!-- Rechtes Info-Panel -->
-    <aside class="panel-right relative z-10 bg-background/80" class:slide-out={isRevealed} data-panel="right">
+    <aside
+      class="panel-right relative z-10 border-l border-accent/80 bg-background-alt/80"
+      class:slide-out={isRevealed}
+      data-panel="right"
+    >
       <div class="container mx-auto flex h-full flex-col justify-between gap-4 px-4 py-10 md:px-6 md:py-16 lg:px-8">
         <div class="text-lg/6 md:mt-4">
           <h5 class="font-semibold">{page.data.site.praxis}</h5>
@@ -96,10 +104,7 @@
             {/each}
           </ul>
           <p>
-            <a
-              class="text-link underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover"
-              href="mailto:{$t('common.mail')}">{$t('common.mail')}</a
-            >
+            <a href="mailto:{$t('common.mail')}">{$t('common.mail')}</a>
           </p>
           <p>
             <PhoneLink />

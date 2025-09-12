@@ -108,22 +108,25 @@
           href={fullUrl}
           class:active={isActive}
           class:bg-button-active={isActive}
-          class:text-link={!isActive}
-          class:text-link-active={isActive}
           class:hoverable:hover:bg-button-hover={!isActive}
-          class:hoverable:hover:text-link-hover={!isActive}
-          class="rounded-md bg-button px-3 py-1 font-medium underline-offset-4 shadow-sm transition"
+          class="rounded-md border border-button-hover bg-button px-3 py-1 font-medium text-link underline-offset-4 shadow-[0_3px_6px] shadow-dark-blue/25 transition hoverable:hover:text-link hoverable:hover:shadow-dark-blue/40"
           class:hidden={isActive}
         >
+          <!-- 
+            if colors should invert:          
+            class:text-button-hover={!isActive}
+            class:text-button={isActive} 
+            class:hoverable:hover:text-button={!isActive}
+          -->
           {name}
         </a>
       {/each}
     </nav>
     <button
       onclick={toggleLocale}
-      class="flex h-8 w-8 items-center justify-center rounded-[50%] bg-button p-2 font-medium text-link shadow-sm transition hoverable:hover:bg-button-hover hoverable:hover:text-link-hover"
-      >{lang === 'en' ? 'DE' : 'EN'}</button
-    >
+      class="flex h-8 w-8 items-center justify-center rounded-[50%] border border-button-hover bg-button p-2 font-medium text-link shadow-[0_3px_6px] shadow-dark-blue/25 transition hoverable:hover:bg-button-hover hoverable:hover:text-link hoverable:hover:shadow-dark-blue/40"
+      >{lang === 'en' ? 'DE' : 'EN'}
+    </button>
   </header>
 
   <main class="relative flex flex-col">
@@ -131,11 +134,13 @@
   </main>
 
   <footer class="relative bottom-0 z-50 w-full">
-    <div class="flex min-h-16 items-end justify-between gap-2 bg-background-nav/80 p-4 md:items-center">
+    <div
+      class="flex min-h-16 items-end justify-between gap-2 border-t border-accent/80 bg-background-nav/80 p-4 md:items-center"
+    >
       <div class="flex flex-wrap gap-2">
-        <a href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>
+        <a class="text-base text-link-contrast" href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>
       </div>
-      <p class="whitespace-nowrap text-right text-base">&copy; 2025 {page.data.site.owner}</p>
+      <p class="whitespace-nowrap text-right text-base text-link-contrast">&copy; 2025 {page.data.site.owner}</p>
     </div>
   </footer>
 </div>
