@@ -5,6 +5,8 @@
   import PriceList from '$lib/components/PriceList.svelte';
   import PhoneLink from '$lib/components/PhoneLink.svelte';
 
+  import HeroImage from '$lib/components/HeroImage.svelte';
+
   let logoImage = '/images/waxing-crescent-moon_1f312.png'; // TODO: Logo einbinden?
   let tanjaImage = '/images/tanja.webp';
   // toggelt die Demo-Animation:
@@ -48,12 +50,12 @@
   >
     <!-- Linkes Info-Panel -->
     <aside
-      class="panel-left relative z-10 border-b border-accent/80 bg-white/50 md:border-b-0 md:border-r md:bg-white/20"
+      class="panel-left relative z-10 border-b border-accent/80 bg-white md:border-b-0 md:border-r md:bg-white/20"
       class:slide-out={isRevealed}
       data-panel="left"
     >
       <div
-        class="container mx-auto flex h-full flex-col justify-around gap-10 bg-background-alt/80 px-4 py-10 md:px-6 md:py-16 lg:px-8"
+        class="container mx-auto flex h-full flex-col justify-around gap-10 bg-background-alt px-4 py-10 md:bg-background-alt/80 md:px-6 md:py-16 lg:px-8"
       >
         <!-- <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" /> -->
         <img
@@ -78,17 +80,18 @@
       <div class="relative z-0 flex h-full items-center justify-center">
         <!-- Lass hier bewusst wenig stehen, damit die Spalte später
              freigelegt 'wie Hintergrund' wirken kann. -->
+        <HeroImage classes="relative h-full w-full block object-cover md:hidden" />
       </div>
     </div>
 
     <!-- Rechtes Info-Panel -->
     <aside
-      class="panel-right relative z-10 border-t border-accent/80 bg-white/50 md:border-l md:border-t-0 md:bg-white/20"
+      class="panel-right relative z-10 border-t border-accent/80 bg-white md:border-l md:border-t-0 md:bg-white/20"
       class:slide-out={isRevealed}
       data-panel="right"
     >
       <div
-        class="container mx-auto flex h-full flex-col justify-between gap-4 bg-background-alt/80 px-4 py-10 md:px-6 md:py-16 lg:px-8"
+        class="container mx-auto flex h-full flex-col justify-between gap-4 bg-background-alt px-4 py-10 md:bg-background-alt/80 md:px-6 md:py-16 lg:px-8"
       >
         <div class="text-lg/6 md:mt-4">
           <h5 class="font-semibold">{page.data.site.praxis}</h5>

@@ -5,7 +5,7 @@
   import { onDestroy, onMount } from 'svelte';
   import '../styles/app.css';
 
-  let heroImage = '/images/Patagonien_0421.webp';
+  import HeroImage from '$lib/components/HeroImage.svelte';
 
   let lang = $state($locale);
 
@@ -91,13 +91,8 @@
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
-  <img
-    src={heroImage}
-    alt="Shiatsu"
-    class="absolute inset-0 h-full w-full object-cover"
-    decoding="async"
-    loading="eager"
-  />
+  <HeroImage />
+
   <header class="fixed top-0 z-50 flex h-16 w-full justify-between p-4">
     <nav class="relative flex h-full items-center justify-center gap-4">
       {#each Object.entries(headerLinks ?? {}) as [key, name = ''] (key)}
