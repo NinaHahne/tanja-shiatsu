@@ -59,6 +59,19 @@ body:has(.show-menu.overflowing) #toggle_menu {
   }
 }
 
+@layer utilities {
+  .logo-shadow {
+    filter: drop-shadow(-4px 8px 8px theme('colors.dark-blue / 0.25'));
+  }
+  .btn-shadow {
+    filter: drop-shadow(0 3px 6px theme('colors.dark-blue / 0.25'));
+    transition: filter 0.2s ease-in-out;
+  }
+  .btn-shadow-hover {
+    filter: drop-shadow(0 3px 6px theme('colors.dark-blue / 0.4'));
+  }
+}
+
 @keyframes float {
   0%,
   100% {

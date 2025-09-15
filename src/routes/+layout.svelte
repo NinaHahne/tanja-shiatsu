@@ -95,7 +95,7 @@
 
   <header class="fixed top-0 z-50 flex h-16 w-full justify-between p-4">
     <nav class="relative flex h-full items-center justify-center gap-4">
-      {#each Object.entries(headerLinks ?? {}) as [key, name = ''] (key)}
+      <!-- {#each Object.entries(headerLinks ?? {}) as [key, name = ''] (key)}
         {@const url = key === 'home' ? '' : `${key}/`}
         {@const fullUrl = `/${lang}/${url}`}
         {@const isActive = fullUrl === page.url.pathname}
@@ -106,20 +106,23 @@
           class:hoverable:hover:bg-button-hover={!isActive}
           class="rounded-md border border-button-hover bg-button px-3 py-1 font-medium text-link underline-offset-4 shadow-[0_3px_6px] shadow-dark-blue/25 transition hoverable:hover:text-link hoverable:hover:shadow-dark-blue/40"
           class:hidden={isActive}
-        >
-          <!-- 
+        > -->
+      <!-- 
             if colors should invert:          
             class:text-button-hover={!isActive}
             class:text-button={isActive} 
             class:hoverable:hover:text-button={!isActive}
           -->
-          {name}
+      <!-- {name}
         </a>
-      {/each}
+      {/each} -->
+      <a href={`/${lang}/`} class="btn-shadow hoverable:hover:btn-shadow-hover">
+        <img src="/images/yarrow-blossom.png" alt="Home Icon" class="h-8 w-8" />
+      </a>
     </nav>
     <button
       onclick={toggleLocale}
-      class="flex h-8 w-8 items-center justify-center rounded-[50%] border border-button-hover bg-button p-2 font-medium text-link shadow-[0_3px_6px] shadow-dark-blue/25 transition hoverable:hover:bg-button-hover hoverable:hover:text-link hoverable:hover:shadow-dark-blue/40"
+      class="btn-shadow hoverable:hover:btn-shadow-hover flex h-8 w-8 items-center justify-center rounded-[50%] border border-button-hover bg-button p-2 font-medium text-link transition hoverable:hover:bg-button-hover hoverable:hover:text-link"
       >{lang === 'en' ? 'DE' : 'EN'}
     </button>
   </header>

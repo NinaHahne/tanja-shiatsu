@@ -7,7 +7,7 @@
 
   import HeroImage from '$lib/components/HeroImage.svelte';
 
-  let logoImage = '/images/waxing-crescent-moon_1f312.png'; // TODO: Logo einbinden?
+  let logoImage = '/images/Logo.webp';
   let tanjaImage = '/images/tanja.webp';
   // toggelt die Demo-Animation:
   let isRevealed = $state(false);
@@ -57,11 +57,10 @@
       <div
         class="container mx-auto flex h-full flex-col justify-around gap-10 bg-background-alt px-4 py-10 md:bg-background-alt/80 md:px-6 md:py-16 lg:px-8"
       >
-        <!-- <img src={logoImage} alt="Shiatsu Logo" class="mx-auto mt-12 max-w-full opacity-0" /> -->
         <img
-          src={tanjaImage}
-          alt="Foto von Tanja"
-          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-1 ring-accent/80 md:mt-4 md:h-44 md:w-44"
+          src={logoImage}
+          alt="Logo"
+          class="logo-shadow mx-auto mt-12 w-52 md:mt-4 md:h-44 md:w-44"
           loading="lazy"
           decoding="async"
         />
@@ -96,14 +95,19 @@
         <div class="text-lg/6 md:mt-4">
           <h5 class="font-semibold">{page.data.site.praxis}</h5>
           <p>{page.data.site.street}<br />{page.data.site.city}</p>
-        </div>
-
-        <div class="text-lg/6">
           <h5 class="font-semibold">{$t('common.prices')}</h5>
           <PriceList />
         </div>
 
-        <div class="text-lg/6">
+        <img
+          src={tanjaImage}
+          alt="Foto von Tanja"
+          class="mx-auto mt-12 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md ring-1 ring-accent/80 md:mt-4 md:h-44 md:w-44"
+          loading="lazy"
+          decoding="async"
+        />
+
+        <div class="text-right text-lg/6">
           <h5 class="font-semibold">{page.data.site.owner}</h5>
           <ul class="mb-2">
             {#each Object.values($t('common.qualifications')) as q}

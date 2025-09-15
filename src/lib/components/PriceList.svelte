@@ -5,9 +5,9 @@
 
   const {
     items = [
-      { minutes: 60, price: 80 },
-      { minutes: 75, price: 100 },
-      { minutes: 90, price: 120 },
+      { minutes: 60, price: 65 },
+      { minutes: 75, price: 75 },
+      { minutes: 90, price: 85 },
     ],
     minutesUnitKey = 'common.minutes', // z.B. "Min" / "min"
     className = 'w-40',
