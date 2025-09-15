@@ -14,41 +14,42 @@ export default {
       colors: {
         // main colors
         primary: {
-          DEFAULT: '#2b3083', // * dark blue
+          DEFAULT: '#011590', // * dark blue
           dark: '#1e40af', // blue-800 #TODO
           light: '#3b82f6', // blue-500 #TODO
         },
         accent: {
-          DEFAULT: '#a2dcd7', // * light mint
+          DEFAULT: '#ffeabd', // * light gold
           dark: '#b91c1c', // red-800 #TODO
         },
         link: {
-          DEFAULT: '#2b3083', // * dark blue
-          hover: '#a2dcd7', // * light mint
-          active: '#a2dcd7', // * light mint
-          contrast: '#ffe9bc', // * light gold
+          DEFAULT: '#011590', // * dark blue
+          hover: '#a4ddd8', // * light mint
+          active: '#a4ddd8', // * light mint
+          contrast: '#ffeabd', // * light gold
         },
         button: {
-          DEFAULT: '#ffe9bc', // * light gold
-          hover: '#a2dcd7', // * light mint
-          active: '#a2dcd7', // * light mint
+          DEFAULT: '#ffeabd', // * light gold
+          hover: '#011590', // * dark blue
+          active: '#011590', // * dark blue
         },
         text: {
-          DEFAULT: '#2b3083', // * dark blue
-          contrast: '#a2dcd7', // * light mint
+          DEFAULT: '#011590', // * dark blue
+          contrast: '#a4ddd8', // * light mint
           muted: '#918a71', // dusty gray #TODO
         },
         background: {
-          DEFAULT: '#a2dcd7', // * light mint (use with 80% opacity)
-          alt: '#fff6ec', // * light apricot
-          nav: '#2b3083', // * dark blue (use with 80% opacity)
+          DEFAULT: '#a4ddd8', // * light mint (use with 80% opacity)
+          alt: '#a4ddd8', // * light mint
+          nav: '#0b1449', // darker blue
         },
 
         // logo/design colors
-        'dark-blue': '#2b3083', // * dark blue
-        'light-mint': '#a2dcd7', // * light mint
-        'light-gold': '#ffe9bc', // * light gold
+        'dark-blue': '#011590', // * dark blue
+        'light-mint': '#a4ddd8', // * light mint
+        'light-gold': '#ffeabd', // * light gold
         'light-apricot': '#fff6ec', // * light apricot
+        'darker-blue': '#0b1449', //  darker blue
 
         // additional colors
         softwhite: '#f4f4f2', // Soft White

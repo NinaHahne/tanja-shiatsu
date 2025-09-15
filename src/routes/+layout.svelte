@@ -87,7 +87,7 @@
 
 <div
   bind:this={container}
-  class="relative flex min-h-dvh w-full flex-col justify-between bg-background-alt/80 text-text"
+  class="relative flex min-h-dvh w-full flex-col justify-between bg-background-alt/60 text-text"
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
@@ -117,12 +117,12 @@
         </a>
       {/each} -->
       <a href={`/${lang}/`} class="btn-shadow hoverable:hover:btn-shadow-hover">
-        <img src="/images/yarrow-blossom.png" alt="Home Icon" class="h-8 w-8" />
+        <img src="/images/yarrow-leaf.png" alt="Home Icon" class="w-[38px]" />
       </a>
     </nav>
     <button
       onclick={toggleLocale}
-      class="btn-shadow hoverable:hover:btn-shadow-hover flex h-8 w-8 items-center justify-center rounded-[50%] border border-button-hover bg-button p-2 font-medium text-link transition hoverable:hover:bg-button-hover hoverable:hover:text-link"
+      class="btn-shadow hoverable:hover:btn-shadow-hover flex h-8 w-8 items-center justify-center rounded-[50%] bg-button p-2 font-medium text-link transition duration-200 hoverable:hover:bg-button-hover hoverable:hover:text-button"
       >{lang === 'en' ? 'DE' : 'EN'}
     </button>
   </header>
@@ -133,7 +133,7 @@
 
   <footer class="relative bottom-0 z-50 w-full">
     <div
-      class="flex min-h-16 items-end justify-between gap-2 border-t border-accent/80 bg-background-nav/90 p-4 md:items-center"
+      class="flex min-h-16 items-end justify-between gap-2 border-t border-accent/80 bg-background-nav/80 p-4 md:items-center"
     >
       <div class="flex flex-wrap gap-2">
         <a class="text-base text-link-contrast" href="/{$locale}/imprint">{$t('common.imprint_privacy')}</a>
