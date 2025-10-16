@@ -11,7 +11,15 @@
 
 <HeroImage classes="fixed inset-0 h-full w-full object-cover md:hidden" />
 
-<section class="relative flex min-h-dvh flex-col items-center gap-4 bg-background-alt/60 px-4 py-24">
-  <h1 class="text-text">{$t('imprint.headline')}</h1>
-  <p class="mt-2 text-[1.2rem] italic text-text">{$t('common.soon')}</p>
+<section class="relative flex min-h-dvh flex-col items-center gap-4 bg-background-alt/80 px-4 py-24">
+  <div
+    class="max-w-3xl text-text
+         [&>a:visited]:text-current [&>a]:text-current [&>a]:underline [&>h2]:mb-4
+         [&>h2]:mt-10 [&>h3]:mb-2
+         [&>h3]:mt-6
+         [&>h3]:font-semibold [&>p]:mt-3 [&>p]:leading-relaxed"
+  >
+    <h1 class="mb-8 text-text">{$t('imprint.headline')}</h1>
+    {@html $t('imprint.content')}
+  </div>
 </section>

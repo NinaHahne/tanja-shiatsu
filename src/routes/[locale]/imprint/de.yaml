@@ -1,5 +1,67 @@
 # imprint page translations
 
-title: Impressum und Datenschutz | Shiatsu – Webseite in Arbeit #TODO
+title: Impressum und Datenschutz | Shiatsu
 
 headline: Impressum und Datenschutz
+
+content: |-
+  <p><strong>Tanja Schochow</strong><br>
+  Shiatsu-Praxis Tanja Schochow<br>
+  Bouchéstr. 67a<br>
+  12059 Berlin<br>
+  01575 80 40 147<br>
+  <a href="mailto:hallo@tanja-shiatsu.de">hallo@tanja-shiatsu.de</a></p>
+
+  <h3>Berufsbezeichnungen</h3>
+  <p>„Gesundheitspraktikerin für Shiatsu“, verliehen in Deutschland im August 2025 durch die Deutsche Gesellschaft für alternative Medizin (DGAM), Shiatsu-Praktikerin in Ausbildung am Europäischen Shiatsu-Institut Berlin (ESI) seit Juni 2023 und Sport- und Gesundheitswissenschaftlerin mit dem Abschluss Master of Arts in „Sport und Lebensstil“, absolviert 2013 an der Carl von Ossietzky Universität Oldenburg.</p>
+
+  <p>Mitglied im Berufsverband Deutsche Gesellschaft für alternative Medizin (DGAM).</p>
+
+  <h3>Web-Design & Entwicklung</h3>
+  <p>Nina Hahne<br>
+  <a href="https://ninahahne.rocks" target="_blank" rel="noopener">ninahahne.rocks</a></p>
+
+  <h3>Logo</h3>
+  <p>Berta Cusó<br>
+  <a href="https://bertacuso.com/about/" target="_blank" rel="noopener">bertacuso.com</a></p>
+
+  <h3>Fotos</h3>
+  <p>Tanja Schochow</p>
+
+  <h3>Hinweis zur Tätigkeit</h3>
+  <p>Shiatsu ist eine achtsame Form der Körperarbeit. Sie unterstützt Menschen dabei, in Kontakt mit sich selbst zu kommen, innere und äußere Balance zu finden und die eigene Lebensenergie zu stärken.</p>
+  <p>Shiatsu ersetzt keine medizinische oder psychotherapeutische Behandlung. Bei gesundheitlichen Beschwerden wenden Sie sich bitte an eine Ärztin, einen Arzt oder eine therapeutische Fachkraft Ihres Vertrauens.</p>
+
+  <h3>Haftung für Inhalte</h3>
+  <p>Ich erstelle die Inhalte dieser Webseite mit großer Sorgfalt und Aufmerksamkeit. Dennoch kann es vorkommen, dass sich Informationen verändern oder unbeabsichtigt Fehler enthalten. Für die Vollständigkeit und Aktualität übernehme ich daher keine Gewähr.</p>
+  <p>Sobald mir Hinweise auf fehlerhafte oder unklare Inhalte bekannt werden, passe ich diese umgehend an.</p>
+
+  <h3>Haftung für Links</h3>
+  <p>Mitunter verweise ich auf andere Internetseiten, die ich persönlich als hilfreich oder inspirierend finde. Auf deren Inhalte habe ich jedoch keinen Einfluss. Für die Inhalte dieser Seiten sind ausschließlich deren Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine problematischen Inhalte erkennbar. Sollte mir eine Rechtsverletzung bekannt werden, wird der entsprechende Link sofort entfernt.</p>
+
+  <h3>Urheberrecht</h3>
+  <p>Die Texte, Fotos und Gestaltungen auf dieser Webseite sind professionell, mit viel Sorgfalt und im Hinblick auf eine achtsame Shiatsu-Praxis erstellt. Sie unterliegen dem Urheberrecht. Wenn Sie Material dieser Webseite teilen möchten, sprechen Sie dies gerne mit mir ab.</p>
+
+  <h3>Berufshaftpflichtversicherung</h3>
+  <p>Versicherung: <br>
+  Sitz der Gesellschaft: <br>
+  Geltungsbereich:</p>
+
+  <h3>Verantwortliche Stelle</h3>
+  <p>Tanja Schochow<br>
+  Bouchéstr. 67a<br>
+  12059 Berlin<br>
+  <a href="mailto:hallo@tanja-shiatsu.de">hallo@tanja-shiatsu.de</a></p>
+
+  <h3>Allgemeine Hinweise</h3>
+  <p>Der Schutz Ihrer persönlichen Daten liegt mir sehr am Herzen. Ich behandele alle Informationen, die Sie mir anvertrauen, mit Respekt, Achtsamkeit und entsprechend den gesetzlichen Vorgaben der DSGVO.</p>
+  <p>Sie können meine Webseite grundsätzlich besuchen, ohne persönliche Angaben zu machen. Nur wenn Sie mir eine Nachricht senden oder einen Termin anfragen, werden Daten erhoben und ausschließlich zum Zweck der Kontaktaufnahme genutzt.</p>
+
+  <h3>Technische Daten</h3>
+  <p>Beim Besuch dieser Webseite werden automatisch einige technische Informationen gespeichert, z.&nbsp;B. Browsertyp, Uhrzeit des Zugriffs oder IP-Adresse. Diese Daten helfen, den sicheren Betrieb der Seite zu gewährleisten. Sie werden nicht verwendet, um Rückschlüsse auf Ihre Person zu ziehen und nach kurzer Zeit automatisch gelöscht.</p>
+
+  <h3>Kontaktaufnahme</h3>
+  <p>Wenn Sie mich per E-Mail oder über das Kontaktformular anschreiben, werden die von Ihnen übermittelten Angaben (z.&nbsp;B. Name, E-Mail-Adresse, Nachricht) gespeichert, um Ihre Anfrage beantworten zu können. Diese Daten werden vertraulich behandelt, nicht an Dritte weitergegeben und, wenn keine gesetzlichen Aufbewahrungspflichten bestehen, gelöscht, sobald die Anfrage abgeschlossen ist.</p>
+
+  <h3>Aktualität der Datenschutzerklärung</h3>
+  <p>Diese Datenschutzerklärung gilt ab Oktober 2025. Ich überprüfe regelmäßig, ob Anpassungen notwendig sind, und aktualisiere die Webseite entsprechend.</p>
