@@ -6,12 +6,17 @@
   import PhoneLink from '$lib/components/PhoneLink.svelte';
 
   import HeroImage from '$lib/components/HeroImage.svelte';
+  import Popup from '$lib/components/Popup.svelte';
 
   let logoImage = '/images/Logo.webp';
   let tanjaImage = '/images/tanja.webp';
   // toggelt die Demo-Animation:
   let isRevealed = $state(false);
   const toggleReveal = () => (isRevealed = !isRevealed);
+
+  // toggelt das Popup:
+  let showPopup: boolean = $state(false);
+  const togglePopup = () => (showPopup = !showPopup);
 </script>
 
 <svelte:head>
@@ -66,9 +71,15 @@
         />
 
         <div>
-          <p class="text-2xl font-semibold">
+          <h3>
             {$t('home.shiatsu')}
+          </h3>
+          <p class="text-sm">
+            <button class="relative" onclick={togglePopup} aria-label={showPopup ? 'less' : 'more'}
+              >{showPopup ? $t('common.less') : $t('common.more')}
+            </button>
           </p>
+          <!-- <p class="prose prose-lg text-pretty leading-relaxed text-text">{$t('home.shiatsu_text')}</p> -->
         </div>
       </div>
     </aside>
@@ -76,10 +87,11 @@
     <!-- Mittlere Bild-Spalte -->
     <div class="relative min-h-[50svh] md:min-h-[calc(100svh-8rem)]">
       <!-- Optionaler Overlay-Content in der Mitte -->
-      <div class="relative z-0 flex h-full items-center justify-center">
+      <div class="relative z-20 flex h-full items-center justify-center">
         <!-- Lass hier bewusst wenig stehen, damit die Spalte später
              freigelegt 'wie Hintergrund' wirken kann. -->
         <HeroImage classes="relative h-full w-full block object-cover md:hidden" />
+        <Popup isOpen={showPopup} onToggle={togglePopup} />
       </div>
     </div>
 
@@ -93,8 +105,9 @@
         class="container mx-auto flex h-full flex-col justify-between gap-4 bg-background-alt px-4 py-10 md:bg-background-alt/60 md:px-6 md:py-16 lg:px-8"
       >
         <div class="text-lg/6 md:mt-4">
-          <h5 class="font-semibold">{page.data.site.praxis}</h5>
-          <p>{page.data.site.street}<br />{page.data.site.city}</p>
+          <!-- <h5 class="font-semibold">{page.data.site.praxis}</h5> -->
+          <p>{$t('home.praxis')}</p>
+          <!-- <p>{page.data.site.street}<br />{page.data.site.city}</p> -->
           <h5 class="font-semibold">{$t('common.prices')}</h5>
           <PriceList />
         </div>

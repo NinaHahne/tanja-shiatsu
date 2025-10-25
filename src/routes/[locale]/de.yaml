@@ -1,9 +1,16 @@
 # home: Homepage translations (root-index)
 
+# geschütztes Leerzeichen: \u00A0
+# soft hyphen: \u00AD
+
 title: Shiatsu – Webseite in Arbeit
 
 headline: Shiatsu für mehr Du selbst.
 
 description: Die Webseite ist bald für Dich da.
 
-shiatsu: "Shiatsu ist Berührung, Energie\u00ADarbeit, Wohl\u00ADfühl\u00ADmassage, Freude, Energie und Begleitung auf deinem\u00A0Weg"
+shiatsu: "Shiatsu ist Energie\u00ADarbeit in Bewegung und lädt dazu ein, zur Ruhe zu kommen, zu atmen und zu\u00A0spüren."
+
+shiatsu_text: "Mit ruhigem, bewusstem Druck und sanften Dehnungen wird der Energiefluss im Körper angeregt – dort, wo er aus der Balance gekommen ist, darf er sich wieder harmonisieren. Diese Form der Körperarbeit unterstützt den Menschen darin, innere Spannungen loszulassen, Lebenskraft zu stärken, sich tiefer mit sich selbst zu verbinden und sich neu auszurichten. Shiatsu stärkt die innere Mitte und fördert Regeneration auf allen\u00A0Ebenen."
+
+praxis: Die Praxis ist in Berlin-Neukölln.

@@ -17,11 +17,14 @@ soon: Coming soon
 
 mail: hello@tanja-shiatsu.de
 
-qualifications:
-  - Shiatsu Practitioner (ESI)
-  - Health Practitioner (DGAM)
-  - M.A. Sport and Lifestyle
+qualifications: #TODO?
+  - Shiatsu health practitioner (DGAM)
+  - Shiatsu practitioner in training (ESI)
+  - M.A. Sports and Lifestyle
 
 prices: 'Prices'
 
 minutes: Minutes
+
+more: More info
+less: Close popup

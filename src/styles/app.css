@@ -32,9 +32,11 @@ body:has(.show-menu.overflowing) #toggle_menu {
   }
   h2 {
     @apply text-3xl font-semibold;
+    @apply mb-4;
   }
   h3 {
     @apply text-2xl font-semibold;
+    @apply mb-2;
   }
   h4 {
     @apply text-xl font-semibold;
