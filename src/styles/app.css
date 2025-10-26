@@ -15,7 +15,8 @@ body {
 }
 
 /* Prevent body scrolling when menu is open */
-body:has(.show-menu.overflowing) {
+body:has(.show-menu.overflowing),
+body:has(.no-scroll) {
   overflow: hidden;
   padding-right: var(--scrollbar-width);
 }

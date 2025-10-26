@@ -16,7 +16,13 @@
 
   // toggelt das Popup:
   let showPopup: boolean = $state(false);
-  const togglePopup = () => (showPopup = !showPopup);
+  let noScroll: boolean = $state(false);
+  const togglePopup = () => {
+    showPopup = !showPopup;
+    if (window.matchMedia('(max-width: 1023px)').matches) {
+      noScroll = !noScroll;
+    }
+  };
 </script>
 
 <svelte:head>
@@ -38,7 +44,7 @@
     -> später einfach die Klasse `slide-out` hinzufügen, um sie auszublenden.
 -->
 
-<section class="h-full w-full overflow-hidden md:h-dvh">
+<section class="h-full w-full overflow-hidden md:h-dvh" class:no-scroll={noScroll}>
   <!-- Dev-Button zum Testen der Slide-Out-Logik (nur vorübergehend) #TODO -->
   <div class="pointer-events-none fixed left-0 top-4 z-50 flex w-full justify-center">
     <button

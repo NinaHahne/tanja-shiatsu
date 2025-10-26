@@ -7,10 +7,13 @@
 
 <button
   id="toggle_popup"
-  class="fixed inset-0 md:relative"
+  class="fixed inset-0 backdrop-blur-[4px] transition-opacity duration-500 ease-in-out md:relative lg:backdrop-blur-none"
   onclick={onToggle}
   aria-label={isOpen ? 'Close Popup' : 'Open Popup'}
-  class:hidden={!isOpen}
+  class:opacity-0={!isOpen}
+  class:opacity-100={isOpen}
+  class:pointer-events-none={!isOpen}
+  class:pointer-events-auto={isOpen}
 >
   <div class="relative p-4">
     <p
