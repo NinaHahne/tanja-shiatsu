@@ -77,14 +77,14 @@
         />
 
         <div>
-          <h3>
+          <h3 class="text-pretty">
             {$t('home.shiatsu')}
           </h3>
-          <p class="text-sm">
+          <!-- <p class="text-sm">
             <button class="relative" onclick={togglePopup} aria-label={showPopup ? 'less' : 'more'}
               >{showPopup ? $t('common.less') : $t('common.more')}
             </button>
-          </p>
+          </p> -->
           <!-- <p class="prose prose-lg text-pretty leading-relaxed text-text">{$t('home.shiatsu_text')}</p> -->
         </div>
       </div>
