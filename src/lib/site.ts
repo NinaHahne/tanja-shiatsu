@@ -10,5 +10,5 @@ export const siteData = {
   owner: 'Tanja Schochow',
   praxis: 'Praxis Lebenswert',
   street: 'Wildenbruchstr.\u00A070', // \u00A0 = NBSP
-  city: '12045 Berlin Alt-Treptow',
+  city: '12045 Berlin-Neukölln',
 };

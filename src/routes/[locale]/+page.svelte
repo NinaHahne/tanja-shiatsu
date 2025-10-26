@@ -105,9 +105,8 @@
         class="container mx-auto flex h-full flex-col justify-between gap-4 bg-background-alt px-4 py-10 md:bg-background-alt/60 md:px-6 md:py-16 lg:px-8"
       >
         <div class="text-lg/6 md:mt-4">
-          <!-- <h5 class="font-semibold">{page.data.site.praxis}</h5> -->
-          <p>{$t('home.praxis')}</p>
-          <!-- <p>{page.data.site.street}<br />{page.data.site.city}</p> -->
+          <h5 class="font-semibold">{page.data.site.praxis}</h5>
+          <p>{page.data.site.street}<br />{page.data.site.city}</p>
           <h5 class="font-semibold">{$t('common.prices')}</h5>
           <PriceList />
         </div>
