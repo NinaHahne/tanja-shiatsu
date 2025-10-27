@@ -44,7 +44,7 @@
     -> später einfach die Klasse `slide-out` hinzufügen, um sie auszublenden.
 -->
 
-<section class="h-full w-full overflow-hidden md:h-dvh" class:no-scroll={noScroll}>
+<section class="h-full w-full overflow-hidden lg:h-dvh" class:no-scroll={noScroll}>
   <!-- Dev-Button zum Testen der Slide-Out-Logik (nur vorübergehend) #TODO -->
   <div class="pointer-events-none fixed left-0 top-4 z-50 flex w-full justify-center">
     <button
@@ -57,29 +57,29 @@
   </div>
 
   <section
-    class="relative grid h-full grid-cols-1 md:grid-cols-[minmax(20rem,1.5fr)_minmax(24rem,2fr)_minmax(20rem,1.5fr)]"
+    class="relative grid h-full grid-cols-1 lg:grid-cols-[minmax(22rem,1.5fr)_minmax(22rem,2fr)_minmax(22rem,1.5fr)]"
   >
     <!-- Linkes Info-Panel -->
     <aside
-      class="panel-left relative z-10 border-b border-accent/80 bg-white md:border-b-0 md:border-r md:bg-white/20"
+      class="panel-left relative z-10 border-b border-accent/80 bg-white lg:border-b-0 lg:border-r lg:bg-white/20"
       class:slide-out={isRevealed}
       data-panel="left"
     >
       <div
-        class="container mx-auto flex h-full flex-col justify-around gap-10 bg-background-alt px-4 py-10 md:bg-background-alt/60 md:p-6 md:pt-16 lg:px-8"
+        class="container mx-auto flex h-full max-w-none flex-col justify-around gap-10 bg-background-alt px-4 py-10 lg:bg-background-alt/60 lg:p-6 lg:pt-16 xl:px-8"
       >
         <img
           src={logoImage}
           alt="Logo"
-          class="logo-shadow mx-auto mt-12 w-52 md:mt-4 md:h-44 md:w-44"
+          class="logo-shadow mx-auto mt-12 w-52 lg:mt-4 lg:h-44 lg:w-44"
           loading="lazy"
           decoding="async"
         />
 
         <div>
-          <h3 id="shiatsu" class="text-pretty">
+          <h4 id="shiatsu" class="text-pretty">
             {$t('home.shiatsu')}
-          </h3>
+          </h4>
           <!-- <p class="text-sm">
             <button class="relative" onclick={togglePopup} aria-label={showPopup ? 'less' : 'more'}
               >{showPopup ? $t('common.less') : $t('common.more')}
@@ -91,26 +91,26 @@
     </aside>
 
     <!-- Mittlere Bild-Spalte -->
-    <div class="relative min-h-[50svh] md:min-h-[calc(100svh-8rem)]">
+    <div class="relative min-h-[50svh] lg:min-h-[calc(100svh-8rem)]">
       <!-- Optionaler Overlay-Content in der Mitte -->
       <div class="relative z-20 flex h-full items-center justify-center">
         <!-- Lass hier bewusst wenig stehen, damit die Spalte später
              freigelegt 'wie Hintergrund' wirken kann. -->
-        <HeroImage classes="relative h-full w-full block object-cover md:hidden" />
+        <HeroImage classes="relative h-full w-full block object-cover lg:hidden" />
         <!-- <Popup isOpen={showPopup} onToggle={togglePopup} /> -->
       </div>
     </div>
 
     <!-- Rechtes Info-Panel -->
     <aside
-      class="panel-right relative z-10 border-t border-accent/80 bg-white md:border-l md:border-t-0 md:bg-white/20"
+      class="panel-right relative z-10 border-t border-accent/80 bg-white lg:border-l lg:border-t-0 lg:bg-white/20"
       class:slide-out={isRevealed}
       data-panel="right"
     >
       <div
-        class="container mx-auto flex h-full flex-col justify-between gap-4 bg-background-alt px-4 py-10 md:bg-background-alt/60 md:px-6 md:py-16 lg:px-8"
+        class="container mx-auto flex h-full max-w-none flex-col justify-between gap-4 bg-background-alt px-4 py-10 lg:bg-background-alt/60 lg:px-6 lg:py-16 xl:px-8"
       >
-        <div class="text-lg/6 md:mt-4">
+        <div class="text-lg/6 lg:mt-4">
           <h5 class="font-semibold">{page.data.site.praxis}</h5>
           <p>{page.data.site.street}<br />{page.data.site.city}</p>
           <h5 class="font-semibold">{$t('common.prices')}</h5>
@@ -120,7 +120,7 @@
         <img
           src={tanjaImage}
           alt="Foto von Tanja"
-          class="mx-auto my-8 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md md:my-4 md:h-44 md:w-44"
+          class="mx-auto my-8 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md lg:my-4 lg:h-44 lg:w-44"
           loading="lazy"
           decoding="async"
         />
@@ -171,8 +171,8 @@
     opacity: 0;
   }
 
-  #shiatsu {
+  /* #shiatsu {
     font-size: clamp(1.2rem, 2vh, 1.5rem);
     line-height: 1.33;
-  }
+  } */
 </style>
