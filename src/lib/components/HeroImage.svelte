@@ -6,7 +6,7 @@
   } = $props();
 
   // default classes, only applied if no custom classes are provided
-  const defaultClasses = 'fixed inset-0 hidden h-full w-full object-cover md:block';
+  const defaultClasses = 'fixed inset-0 hidden h-full w-full object-cover lg:block';
   const appliedClasses = classes || defaultClasses;
 </script>
 
