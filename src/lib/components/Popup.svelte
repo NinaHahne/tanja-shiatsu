@@ -19,7 +19,7 @@
     <p
       class="prose prose-lg text-pretty rounded-md border border-accent/80 bg-background-alt p-4 leading-relaxed text-text md:bg-background-alt/80"
     >
-      {$t('home.shiatsu_text')}
+      {$t('home.popup_text')}
     </p>
   </div>
 </button>

@@ -83,6 +83,18 @@
 
 <svelte:head>
   <title>{$t('common.title')}</title>
+
+  <meta name="description" content="{$t('common.description')} – {$t('home.shiatsu')}" />
+  <meta property="og:image" content="/images/social-preview.jpg" />
+  <meta property="og:url" content="https://tanja-shiatsu.de" />
+  <meta property="og:type" content="website" />
+  <!-- Optional (für X, Discord, Threads etc.) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/images/social-preview.jpg" />
+
+  <link rel="canonical" href="https://tanja-shiatsu.de" />
+  <link rel="alternate" href="https://tanja-shiatsu.de/de" hreflang="de" />
+  <link rel="alternate" href="https://tanja-shiatsu.de/en" hreflang="en" />
 </svelte:head>
 
 <div

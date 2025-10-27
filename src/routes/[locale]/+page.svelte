@@ -6,7 +6,7 @@
   import PhoneLink from '$lib/components/PhoneLink.svelte';
 
   import HeroImage from '$lib/components/HeroImage.svelte';
-  import Popup from '$lib/components/Popup.svelte';
+  // import Popup from '$lib/components/Popup.svelte';
 
   let logoImage = '/images/Logo.webp';
   let tanjaImage = '/images/tanja.webp';
@@ -66,7 +66,7 @@
       data-panel="left"
     >
       <div
-        class="container mx-auto flex h-full flex-col justify-around gap-10 bg-background-alt px-4 py-10 md:bg-background-alt/60 md:px-6 md:py-16 lg:px-8"
+        class="container mx-auto flex h-full flex-col justify-around gap-10 bg-background-alt px-4 py-10 md:bg-background-alt/60 md:p-6 md:pt-16 lg:px-8"
       >
         <img
           src={logoImage}
@@ -77,7 +77,7 @@
         />
 
         <div>
-          <h3 class="text-pretty">
+          <h3 id="shiatsu" class="text-pretty">
             {$t('home.shiatsu')}
           </h3>
           <!-- <p class="text-sm">
@@ -97,7 +97,7 @@
         <!-- Lass hier bewusst wenig stehen, damit die Spalte später
              freigelegt 'wie Hintergrund' wirken kann. -->
         <HeroImage classes="relative h-full w-full block object-cover md:hidden" />
-        <Popup isOpen={showPopup} onToggle={togglePopup} />
+        <!-- <Popup isOpen={showPopup} onToggle={togglePopup} /> -->
       </div>
     </div>
 
@@ -169,5 +169,10 @@
   .panel-right.slide-out {
     transform: translateX(100%);
     opacity: 0;
+  }
+
+  #shiatsu {
+    font-size: clamp(1.2rem, 2vh, 1.5rem);
+    line-height: 1.33;
   }
 </style>
