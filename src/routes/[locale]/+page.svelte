@@ -57,7 +57,7 @@
   </div>
 
   <section
-    class="relative grid h-full grid-cols-1 lg:grid-cols-[minmax(22rem,1.5fr)_minmax(22rem,2fr)_minmax(22rem,1.5fr)]"
+    class="relative grid h-full grid-cols-1 lg:grid-cols-[minmax(25rem,1.5fr)_minmax(14rem,2fr)_minmax(25rem,1.5fr)]"
   >
     <!-- Linkes Info-Panel -->
     <aside
