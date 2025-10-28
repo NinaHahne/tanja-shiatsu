@@ -66,12 +66,12 @@
       data-panel="left"
     >
       <div
-        class="container mx-auto flex h-full max-w-none flex-col justify-around gap-10 bg-background-alt px-4 py-10 lg:bg-background-alt/60 lg:p-6 lg:pt-16 xl:px-8"
+        class="container mx-auto flex h-full max-w-none flex-col items-center justify-around gap-10 bg-background-alt px-4 py-10 lg:bg-background-alt/60 lg:p-6 lg:pt-16 xl:px-8"
       >
         <img
           src={logoImage}
           alt="Logo"
-          class="logo-shadow mx-auto mt-12 w-[238px] lg:mt-4 lg:w-[200px]"
+          class="logo-shadow ml-[28px] mt-12 w-[238px] lg:ml-[24px] lg:mt-4 lg:w-[200px]"
           loading="lazy"
           decoding="async"
         />
