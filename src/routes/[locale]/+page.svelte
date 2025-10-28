@@ -71,7 +71,7 @@
         <img
           src={logoImage}
           alt="Logo"
-          class="logo-shadow mx-auto mt-12 w-52 lg:mt-4 lg:h-44 lg:w-44"
+          class="logo-shadow mx-auto mt-12 w-[238px] lg:mt-4 lg:w-[200px]"
           loading="lazy"
           decoding="async"
         />
