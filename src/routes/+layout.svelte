@@ -129,12 +129,17 @@
         </a>
       {/each} -->
       <a href={`/${lang}/`} class="btn-shadow hoverable:hover:btn-shadow-hover">
-        <img src="/images/yarrow-leaf.png" alt="Home Icon" class="w-[38px]" />
+        <img
+          draggable="false"
+          src="/images/yarrow-leaf.png"
+          alt="Home Icon"
+          class="pointer-events-none w-[38px] translate-y-[4px]"
+        />
       </a>
     </nav>
     <button
       onclick={toggleLocale}
-      class="btn-shadow hoverable:hover:btn-shadow-hover flex h-8 w-8 items-center justify-center rounded-[50%] bg-button p-2 font-medium text-link transition duration-200 hoverable:hover:bg-button-hover hoverable:hover:text-button"
+      class="btn-shadow hoverable:hover:btn-shadow-hover flex h-8 w-8 items-center justify-center rounded-[50%] bg-button p-2 font-medium text-link duration-200 hoverable:hover:bg-button-hover hoverable:hover:text-button"
       >{lang === 'en' ? 'DE' : 'EN'}
     </button>
   </header>

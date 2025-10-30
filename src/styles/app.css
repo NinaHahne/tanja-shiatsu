@@ -49,6 +49,10 @@ body:has(.show-menu.overflowing) #toggle_menu {
     @apply text-lg font-medium;
   }
 
+  blockquote {
+    @apply text-xl font-semibold;
+  }
+
   p {
     @apply text-lg;
   }
@@ -68,7 +72,8 @@ body:has(.show-menu.overflowing) #toggle_menu {
   }
   .btn-shadow {
     filter: drop-shadow(0 3px 6px theme('colors.dark-blue / 0.25'));
-    transition: filter 0.2s ease-in-out;
+    @apply transition;
+    transition-timing-function: ease-in-out;
   }
   .btn-shadow-hover {
     filter: drop-shadow(0 3px 6px theme('colors.dark-blue / 0.4'));
