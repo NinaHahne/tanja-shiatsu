@@ -14,6 +14,15 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Work Sans', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Prevent body scrolling when menu is open */
 body:has(.show-menu.overflowing),
 body:has(.no-scroll) {
@@ -27,34 +36,50 @@ body:has(.show-menu.overflowing) #toggle_menu {
 
 @layer base {
   /* Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Quicksand', sans-serif; */
+  }
+
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-5xl font-bold;
     @apply mb-4;
   }
   h2 {
-    @apply text-3xl font-semibold;
+    @apply text-4xl font-bold;
     @apply mb-4;
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-3xl font-bold;
     @apply mb-2;
   }
   h4 {
-    @apply text-xl font-semibold;
+    @apply text-2xl font-bold;
   }
   h5 {
-    @apply text-lg font-semibold;
+    @apply text-xl font-bold;
+    font-size: 1.3rem;
   }
   h6 {
-    @apply text-lg font-medium;
+    @apply text-lg font-semibold;
   }
 
   blockquote {
-    @apply text-xl font-semibold;
+    @apply text-2xl font-bold italic;
+    line-height: 1.2;
   }
 
-  p {
+  p,
+  li {
     @apply text-lg;
+    font-size: 1rem;
+    line-height: 1.4;
   }
 
   a {
