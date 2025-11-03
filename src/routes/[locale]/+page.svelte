@@ -113,8 +113,9 @@
         <div class="text-lg/6">
           <h5 class="">{page.data.site.praxis}</h5>
           <p>{page.data.site.street}<br />{page.data.site.city}</p>
-          <h5 class="">{$t('common.prices')}</h5>
+          <h5 class="mt-1">{$t('common.prices')}</h5>
           <PriceList />
+          <h5 class="mt-1">{$t('common.house_calls')}</h5>
         </div>
 
         <img
