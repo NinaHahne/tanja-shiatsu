@@ -110,10 +110,18 @@
       <div
         class="container mx-auto flex h-full max-w-none flex-col justify-between gap-4 bg-background-alt px-4 py-10 lg:bg-background-alt/70 lg:px-6 lg:py-16 xl:px-8"
       >
-        <div class="text-lg/6">
-          <h5 class="">{page.data.site.praxis}</h5>
-          <p>{page.data.site.street}<br />{page.data.site.city}</p>
-          <h5 class="">{$t('common.prices')}</h5>
+        <div class="flex flex-col text-lg/6 lg:items-center">
+          <div class="flex flex-col gap-2 lg:flex-row">
+            <div class="flex-shrink-0">
+              <h5 class="">{page.data.site.praxis}</h5>
+              <p>{page.data.site.street}<br />{page.data.site.city}</p>
+            </div>
+            <!-- <p class="">{$t('common.house_calls')}</p> -->
+            <div>
+              {@html $t('common.house_calls')}
+            </div>
+          </div>
+          <h5 class="mt-2">{$t('common.prices')}</h5>
           <PriceList />
         </div>
 

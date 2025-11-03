@@ -28,5 +28,9 @@ prices: 'Preise'
 
 minutes: Minuten
 
+house_calls: |-
+  <h5>Hausbesuche</h5>
+  <p>nach Vereinbarung</p>
+
 more: Mehr erfahren
 less: Popup schließen
