@@ -28,9 +28,7 @@ prices: 'Prices'
 
 minutes: Minutes
 
-house_calls: |-
-  <h5>House Calls</h5>
-  <p>by arrangement</p>
+house_calls: House calls by arrangement
 
 more: More info
 less: Close popup
