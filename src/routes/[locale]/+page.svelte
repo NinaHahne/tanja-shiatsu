@@ -61,31 +61,38 @@
   >
     <!-- Linkes Info-Panel -->
     <aside
-      class="panel-left relative z-10 border-b border-accent/80 bg-white lg:border-b-0 lg:border-r lg:bg-white/20"
+      class="panel-left relative z-10 border-b border-accent/80 bg-white text-center lg:border-b-0 lg:border-r lg:bg-white/20"
       class:slide-out={isRevealed}
       data-panel="left"
     >
       <div
-        class="container mx-auto flex h-full max-w-none flex-col items-center justify-around gap-10 bg-background-alt px-4 py-10 lg:bg-background-alt/70 lg:p-6 lg:pt-16 xl:px-8"
+        class="container mx-auto flex h-full max-w-none flex-col items-center justify-evenly gap-4 bg-background-alt px-4 pb-10 pt-16 lg:bg-background-alt/70 lg:px-6 lg:py-16 xl:px-8"
       >
-        <img
-          src={logoImage}
-          alt="Logo"
-          class="logo-shadow ml-[28px] mt-12 w-[238px] lg:ml-[24px] lg:mt-4 lg:w-[200px]"
-          loading="lazy"
-          decoding="async"
-        />
-
-        <div>
+        <div class="flex flex-1 flex-col justify-center">
           <blockquote id="shiatsu" class="text-pretty">
-            {$t('home.shiatsu')}
+            {$t('home.shiatsu_2')}
           </blockquote>
           <!-- <p class="text-sm">
-            <button class="relative" onclick={togglePopup} aria-label={showPopup ? 'less' : 'more'}
-              >{showPopup ? $t('common.less') : $t('common.more')}
-            </button>
-          </p> -->
+          <button class="relative" onclick={togglePopup} aria-label={showPopup ? 'less' : 'more'}
+            >{showPopup ? $t('common.less') : $t('common.more')}
+          </button>
+        </p> -->
           <!-- <p class="prose prose-lg text-pretty leading-relaxed text-text">{$t('home.shiatsu_text')}</p> -->
+        </div>
+        <div class="flex flex-none flex-col justify-end lg:h-[204px]">
+          <img
+            src={logoImage}
+            alt="Logo"
+            class="logo-shadow mb-[12px] ml-[28px] w-[238px] lg:mb-[12px] lg:ml-[24px] lg:w-[200px]"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="flex flex-1 flex-col justify-center">
+          <blockquote class="text-pretty text-left">
+            {$t('home.shiatsu')}
+          </blockquote>
         </div>
       </div>
     </aside>
@@ -108,25 +115,9 @@
       data-panel="right"
     >
       <div
-        class="container mx-auto flex h-full max-w-none flex-col justify-between gap-4 bg-background-alt px-4 py-10 lg:bg-background-alt/70 lg:px-6 lg:py-16 xl:px-8"
+        class="container mx-auto flex h-full max-w-none flex-col justify-evenly gap-4 bg-background-alt px-4 py-10 lg:bg-background-alt/70 lg:px-6 lg:py-16 xl:px-8"
       >
-        <div class="text-lg/6">
-          <h5 class="">{page.data.site.praxis}</h5>
-          <p>{page.data.site.street}<br />{page.data.site.city}</p>
-          <h5 class="mt-1">{$t('common.prices')}</h5>
-          <PriceList />
-          <h5 class="mt-1">{$t('common.house_calls')}</h5>
-        </div>
-
-        <img
-          src={tanjaImage}
-          alt="Foto von Tanja"
-          class="mx-auto my-8 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md lg:m-auto lg:h-44 lg:w-44"
-          loading="lazy"
-          decoding="async"
-        />
-
-        <div class="text-right text-lg/6">
+        <div class="flex flex-1 flex-col items-end justify-start text-right text-lg/6">
           <h5 class="">{page.data.site.owner}</h5>
           <ul class="mb-2">
             {#each Object.values($t('common.qualifications')) as q}
@@ -139,6 +130,24 @@
           <p>
             <PhoneLink />
           </p>
+        </div>
+
+        <div class="flex-none lg:py-[14px]">
+          <img
+            src={tanjaImage}
+            alt="Foto von Tanja"
+            class="mx-auto my-8 h-52 w-52 rounded-full object-cover object-[center_25%] shadow-md lg:m-auto lg:h-44 lg:w-44"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="flex flex-1 flex-col justify-end text-lg/6">
+          <h5 class="">{page.data.site.praxis}</h5>
+          <p>{page.data.site.street}<br />{page.data.site.city}</p>
+          <h5 class="mt-1">{$t('common.prices')}</h5>
+          <PriceList />
+          <h5 class="mt-1">{$t('common.house_calls')}</h5>
         </div>
       </div>
     </aside>
