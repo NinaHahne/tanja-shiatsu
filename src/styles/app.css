@@ -64,7 +64,7 @@ body:has(.show-menu.overflowing) #toggle_menu {
     @apply text-xl font-bold;
   }
   h5 {
-    @apply text-lg font-bold;
+    @apply text-lg font-semibold;
     /* font-size: 1.3rem; */
   }
   h6 {
