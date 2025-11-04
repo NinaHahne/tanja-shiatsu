@@ -132,6 +132,7 @@ export default defineConfig({
 
 ---
 
-## ❓ Questions?
+## Fonts
 
-This template is designed for **flexibility**. Modify as needed! 🚀
+Fonts used in this website are open-source and locally hosted.  
+No data is transmitted to Google Fonts servers.

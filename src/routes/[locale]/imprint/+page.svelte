@@ -17,7 +17,7 @@
          [&>a:visited]:text-current [&>a]:text-current [&>a]:underline [&>h2]:mb-4
          [&>h2]:mt-10 [&>h3]:mb-2
          [&>h3]:mt-6
-         [&>h3]:font-semibold [&>p]:mt-3 [&>p]:leading-relaxed"
+         [&>h3]:font-semibold [&>p]:mt-3 [&>p]:text-lg [&>p]:leading-relaxed"
   >
     <h1 class="mb-8 text-text">{$t('imprint.headline')}</h1>
     {@html $t('imprint.content')}

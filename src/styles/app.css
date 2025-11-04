@@ -1,3 +1,4 @@
+@import './fonts.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -15,9 +16,6 @@ body {
 }
 
 body {
-  /* font-family: 'Quicksand', sans-serif; */
-  /* font-family: 'Work Sans', sans-serif; */
-  /* font-family: 'Raleway', sans-serif; */
   font-family: 'Nunito Sans', sans-serif;
 
   -webkit-font-smoothing: antialiased;
@@ -37,17 +35,6 @@ body:has(.show-menu.overflowing) #toggle_menu {
 
 @layer base {
   /* Typography */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  blockquote {
-    /* font-family: 'Cormorant Garamond', serif; */
-    /* font-family: 'Quicksand', sans-serif; */
-  }
-
   h1 {
     @apply text-4xl font-bold;
     @apply mb-4;
@@ -81,6 +68,7 @@ body:has(.show-menu.overflowing) #toggle_menu {
     @apply text-lg;
     font-size: 1rem;
     line-height: 1.4;
+    font-weight: 400;
   }
 
   a {
@@ -90,51 +78,6 @@ body:has(.show-menu.overflowing) #toggle_menu {
   footer a {
     @apply text-link-contrast underline underline-offset-4 transition active:text-link-active hoverable:hover:text-link-hover;
   }
-
-  /* Trying out new fonts: */
-  #imprint p {
-    font-size: 18px;
-  }
-  /* #imprint div h3:nth-of-type(1),
-  #imprint div h3:nth-of-type(1) + p,
-  #imprint div h3:nth-of-type(1) + p + p {
-    font-family: 'Cormorant Garamond', serif;
-  }
-  #imprint div h3:nth-of-type(5),
-  #imprint div h3:nth-of-type(5) + p,
-  #imprint div h3:nth-of-type(5) + p + p {
-    font-family: 'Lato', sans-serif;
-  }
-  #imprint div h3:nth-of-type(6),
-  #imprint div h3:nth-of-type(6) + p,
-  #imprint div h3:nth-of-type(6) + p + p {
-    font-family: 'Nunito Sans', sans-serif;
-  }
-  #imprint div h3:nth-of-type(7),
-  #imprint div h3:nth-of-type(7) + p,
-  #imprint div h3:nth-of-type(7) + p + p {
-    font-family: 'Quicksand', sans-serif;
-  }
-  #imprint div h3:nth-of-type(8),
-  #imprint div h3:nth-of-type(8) + p,
-  #imprint div h3:nth-of-type(8) + p + p {
-    font-family: 'Spectral', serif;
-  }
-  #imprint div h3:nth-of-type(11),
-  #imprint div h3:nth-of-type(11) + p,
-  #imprint div h3:nth-of-type(11) + p + p {
-    font-family: 'Work Sans', sans-serif;
-  }
-  #imprint div h3:nth-of-type(12),
-  #imprint div h3:nth-of-type(12) + p,
-  #imprint div h3:nth-of-type(12) + p + p {
-    font-family: 'Lora', serif;
-  }
-  #imprint div h3:nth-of-type(13),
-  #imprint div h3:nth-of-type(13) + p,
-  #imprint div h3:nth-of-type(13) + p + p {
-    font-family: 'Domine', serif;
-  } */
 }
 
 @layer utilities {
