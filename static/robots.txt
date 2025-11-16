@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tanja-shiatsu.de/sitemap.xml
