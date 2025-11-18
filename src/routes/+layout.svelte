@@ -7,6 +7,15 @@
 
   let lang = $state($locale);
 
+  const base = 'https://tanja-shiatsu.de';
+
+  // aktuelle URL, inkl. /de, /en, /imprint etc.
+  const canonicalUrl = $derived(base + page.url.pathname);
+
+  // hreflang URLs
+  const alternateDe = $derived(base + page.url.pathname.replace(/^\/(de|en)/, '/de'));
+  const alternateEn = $derived(base + page.url.pathname.replace(/^\/(de|en)/, '/en'));
+
   // Function to toggle the language
   const toggleLocale = () => {
     const newLocale = lang === 'en' ? 'de' : 'en';
@@ -90,9 +99,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="/images/social-preview.jpg" />
 
-  <link rel="canonical" href="https://tanja-shiatsu.de" />
-  <link rel="alternate" href="https://tanja-shiatsu.de/de" hreflang="de" />
-  <link rel="alternate" href="https://tanja-shiatsu.de/en" hreflang="en" />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" hreflang="de" href={alternateDe} />
+  <link rel="alternate" hreflang="en" href={alternateEn} />
 </svelte:head>
 
 <div
