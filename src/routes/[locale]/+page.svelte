@@ -29,12 +29,6 @@
   <title>{$t('home.title')}</title>
 </svelte:head>
 
-<!-- <section class="relative flex h-dvh flex-col items-center justify-center gap-4 px-4 py-24 text-center">
-  <div class="animate-float relative text-[3rem]">🌒</div>
-  <h1 class="mt-4 text-[2.5rem] font-bold text-text-contrast">{$t('home.headline')}</h1>
-  <p class="mt-2 text-[1.2rem] text-text">{$t('home.description')}</p>
-</section> -->
-
 <!--
   3-spaltiges Grundlayout:
   - Linkes & rechtes Panel enthalten alle Infos (Text, Links etc.)
@@ -43,6 +37,8 @@
   - Die Klassen `panel-left` / `panel-right` sind darauf vorbereitet:
     -> später einfach die Klasse `slide-out` hinzufügen, um sie auszublenden.
 -->
+
+<HeroImage />
 
 <section class="h-full w-full overflow-hidden" class:no-scroll={noScroll}>
   <!-- Dev-Button zum Testen der Slide-Out-Logik (nur vorübergehend) #TODO -->

@@ -5,8 +5,6 @@
   import { onDestroy, onMount } from 'svelte';
   import '../styles/app.css';
 
-  import HeroImage from '$lib/components/HeroImage.svelte';
-
   let lang = $state($locale);
 
   // Function to toggle the language
@@ -103,8 +101,6 @@
   class:overflowing={isBodyOverflowing}
   class:show-menu={showMenu}
 >
-  <HeroImage />
-
   <header class="fixed top-0 z-50 flex h-16 w-full justify-between p-4">
     <nav class="relative flex h-full items-center justify-center gap-4">
       <!-- {#each Object.entries(headerLinks ?? {}) as [key, name = ''] (key)}

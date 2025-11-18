@@ -9,7 +9,7 @@
   <title>{$t('imprint.title')}</title>
 </svelte:head>
 
-<HeroImage classes="fixed inset-0 h-full w-full object-cover lg:hidden" />
+<HeroImage classes="fixed inset-0 h-full w-full object-cover" />
 
 <section id="imprint" class="relative flex min-h-dvh flex-col items-center gap-4 bg-background-alt/80 px-4 py-24">
   <div
